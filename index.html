@@ -16,12 +16,12 @@
 
                 <form action="">
                     <label for="regiao">Região</label>
-                    <select class="form-select form-select-lg mb-3" id="regiao">
+                    <select onchange="atualizarEstados()" class="form-select form-select-lg mb-3" id="regiao">
                         <option value="">-- Selecione --</option>
                     </select>
 
                     <label for="estado">Estado</label>
-                    <select class="form-select form-select-lg mb-3" id="estado">
+                    <select onchange="atualizarCidades()" class="form-select form-select-lg mb-3" id="estado">
                         <option value="">-- Selecione --</option>
                     </select>
 
