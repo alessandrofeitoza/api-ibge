@@ -13,6 +13,12 @@ function atualizarRegioes() {
 }
 
 function atualizarEstados() {
+    let id = 1;
+
+    fetch(`https://servicodados.ibge.gov.br/api/v1/localidades/regioes/${id}/estados`)
+        .then()
+        .then();
+
     let estados = [
         'Ceará',
         'Maranhão',
