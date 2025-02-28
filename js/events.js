@@ -29,7 +29,7 @@ function atualizarEstados() {
 function atualizarCidades() {
     let id = SELECT_ESTADO.value;
 
-    SELECT_CIDADE.innerHTML = '<option selected disabled> Carregando... </option>';
+    SELECT_CIDADE.innerHTML = '<option selected disabled>   Carregando... </option>';
 
     fetch(`https://servicodados.ibge.gov.br/api/v1/localidades/estados/${id}/municipios`)
         .then(res => res.json())
